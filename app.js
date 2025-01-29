@@ -13,7 +13,7 @@ function agregarAmigo(){
         // limpiar entrada de nombre
         limpiarCampo('amigo');
         // mostrar lista
-        alert(amigos);
+        mostrarAmigos();
     }    
     else
         alert(`Por favor, inserte un nombre.`);
@@ -38,3 +38,21 @@ function actualizarAmigos(nombre){
     amigos.push(nombre);
 }
 
+//muestra lista de amigos
+function mostrarAmigos(){ 
+    //Obtener el elemento de la lista   
+    const lista = document.getElementById('resultado');
+    //Limpiar la lista existente
+    lista.innerHTML = '';
+
+    //Iterar sobre el arreglo
+    for(let i = 0; i< amigos.length; i++){    
+        // Crear el nuevo <li>
+        const nuevoElemento = document.createElement('li');        
+        // Establecer el contenido de texto del nuevo <li>
+        nuevoElemento.textContent = amigos[i];
+        
+        //Agregar elementos a la lista
+        lista.appendChild(nuevoElemento);
+    }
+}
