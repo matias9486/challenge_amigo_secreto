@@ -12,6 +12,7 @@
 
 *[Funcionalidades](#fucionalidades)
 
+*[Despliegue](#deploy)
 
 ## Tecnologías y herramientas utilizadas 💻:
 
@@ -35,15 +36,25 @@ El usuario deberá agregar nombres mediante un campo de texto y un botón "Añad
 
 - **` Validar entrada `**: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 
+![validar_nombre](screenshot/validar_nombre.png)
+
 - **` Visualizar la lista `**: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
 ![mostrar_amigo](screenshot/mostrar_amigo.png)
 
 ![mostrar_amigos](screenshot/mostrar_amigos.png)
 
-
 - **` Sorteo aleatorio `**: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
 ![mostrar_amigo_secreto](screenshot/mostrar_amigo_secreto.png)
+
+- **` Validar existencia de amigos `**: Si se intenta sortear amigo y  no hay amigos agregados aún, el programa mostrará una alerta pidiendo que se agreguen amigos  primero.
+
+![validar_existencia_amigos](screenshot/validar_existencia_amigos.png)
+
+[Volver al índice](#índice)
+
+## Deploy
+Puedes jugar "Amigo secreto" haciendo [click aquí](https://matias9486.github.io/challenge_amigo_secreto/)
 
 [Volver al índice](#índice)
